@@ -21,11 +21,18 @@ export default function Navbar() {
           }
         }
       });
+      if (
+        window.innerHeight + window.scrollY >=
+        document.body.offsetHeight - 5
+      ) {
+        current = "contact";
+      }
 
       setActiveSection(current);
     };
 
     window.addEventListener("scroll", handleScroll);
+    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
