@@ -27,7 +27,7 @@ export default function Hero() {
 
           <div className="mt-8 flex gap-4">
             <a
-              href="/cv-khaerul-rohman.pdf"
+              href="/CV_English_Muhammad Khaerul Rohman.pdf"
               download
               className="px-6 py-3 bg-orange-500 text-black font-semibold rounded-lg
              hover:bg-orange-400 transition"
