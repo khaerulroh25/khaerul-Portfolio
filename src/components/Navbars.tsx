@@ -37,13 +37,13 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <nav className="fixed top-0 w-full z-50 bg-[#0b1630]/80 backdrop-blur border-b border-white/10">
+    <nav className="fixed top-0 w-full z-50 bg-[#0b1630]/80 md:px-9 px-4 backdrop-blur border-b border-white/10">
       <div className="max-w-7xl mx-auto  h-16 flex items-center justify-between">
         <a
           href="#hero"
           className="text-lg font-semibold text-white tracking-wide"
         >
-          <span className="text-4xl md:text-5xl px-5 font-bold text-orange-400">
+          <span className="text-4xl md:text-5xl  font-bold text-orange-400">
             Khaerul
           </span>
         </a>
