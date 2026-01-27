@@ -5,11 +5,12 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen
+      className="min-h-[calc(100vh-4rem)] md:min-h-screen
     bg-[#0b1630]
     flex items-center
     px-6 md:px-10
-    pt-24 md:pt-0"
+    pt-20 sm:pt-24 md:pt-0
+"
     >
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-12">
         <motion.div
