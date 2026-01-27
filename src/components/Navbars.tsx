@@ -43,7 +43,7 @@ export default function Navbar() {
           href="#hero"
           className="text-lg font-semibold text-white tracking-wide"
         >
-          <span className="text-4xl md:text-5xl font-bold text-orange-400">
+          <span className="text-4xl md:text-5xl px-5 md:px-0 font-bold text-orange-400">
             Khaerul
           </span>
         </a>
