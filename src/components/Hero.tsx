@@ -5,7 +5,11 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen bg-[#0b1630] flex items-center px-8"
+      className="min-h-screen
+    bg-[#0b1630]
+    flex items-center
+    px-6 md:px-10
+    pt-24 md:pt-0"
     >
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-12">
         <motion.div
@@ -15,7 +19,7 @@ export default function Hero() {
         >
           <p className="text-orange-400 mb-3">Hello! My name is</p>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-white">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
             Muhammad Khaerul Rohman.
           </h1>
 
@@ -25,7 +29,7 @@ export default function Hero() {
             backend.
           </p>
 
-          <div className="mt-8 flex gap-4">
+          <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <a
               href="/CV_English_Muhammad Khaerul Rohman.pdf"
               download
@@ -52,16 +56,28 @@ export default function Hero() {
           className="relative flex justify-center md:justify-end"
         >
           <div
-            className="absolute w-[420px] h-[420px] rounded-full right-0 md:right-12 
-             top-1/2 -translate-y-1/2
-             bg-[radial-gradient(circle_at_30%_30%,_#fdba74,_#f97316,_#c2410c)]"
+            className="hidden md:block
+            absolute
+            w-[260px] h-[260px]
+            sm:w-[320px] sm:h-[320px]
+            md:w-[380px] md:h-[380px]
+            lg:w-[420px] lg:h-[420px]
+            rounded-full
+            right-1/2 translate-x-1/2
+            md:right-12 md:translate-x-0
+            top-1/2 -translate-y-1/2
+            bg-[radial-gradient(circle_at_30%_30%,_#fdba74,_#f97316,_#c2410c)]"
           ></div>
           <img
             src={Image}
             alt="Khaerul"
-            className="relative z-10 max-h-[520px] w-auto -translate-y-8
-                drop-shadow-[0_30px_60px_rgba(0,0,0,0.45)]
-                drop-shadow-[0_0_40px_rgba(249,115,22,0.45)]"
+            className="hidden md:block
+              relative z-10
+              max-h-[460px]
+              lg:max-h-[520px]
+              w-auto
+              -translate-y-8
+              drop-shadow-[0_0_40px_rgba(249,115,22,0.45)]"
           />
         </motion.div>
       </div>
