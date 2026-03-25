@@ -1,13 +1,16 @@
 import { motion } from "framer-motion";
 import {
   FaLaravel,
-  FaGithub,
   FaExternalLinkAlt,
+  FaGithub,
   FaPhp,
+  FaNodeJs,
   FaAndroid,
 } from "react-icons/fa";
 import {
+  SiExpress,
   SiMysql,
+  SiReact,
   SiTailwindcss,
   SiHtml5,
   SiCss3,
@@ -17,6 +20,7 @@ import {
 import Project1 from "../assets/projects/project1.png";
 import Project2 from "../assets/projects/project3.png";
 import Project3 from "../assets/projects/project2.png";
+import Project4 from "../assets/projects/project4.png";
 
 const projects = [
   {
@@ -40,6 +44,7 @@ const projects = [
     image: Project2,
     description:
       "Online booking service application for scheduling appointments, managing services, and handling bookings through an administrative dashboard.",
+    account: "Username : admin@example.com, Password : password",
     tech: [<SiTailwindcss />, <FaLaravel />, <SiMysql />],
     github: "#",
     demo: "https://barber.rengasdengklok086.my.id/",
@@ -49,9 +54,25 @@ const projects = [
     image: Project3,
     description:
       "Member service application for automotive workshops with service tracking and timeline-based job progress management.",
+    account: "Useername : admin@example.com, Password : admin",
     tech: [<SiTailwindcss />, <FaLaravel />, <SiMysql />],
     github: "#",
     demo: "https://bengkelpro.rengasdengklok086.my.id/login",
+  },
+  {
+    title: "Chill Movie",
+    image: Project4,
+    description:
+      "Chill Movie is a web app to help you find movies to enjoy in your free time. You can search for movies, check details, and explore different options with a clean and simple interface.",
+    tech: [
+      <SiTailwindcss />,
+      <SiReact />,
+      <FaNodeJs />,
+      <SiMysql />,
+      <SiExpress />,
+    ],
+    github: "#",
+    demo: "https://chill-movie-part4-jhq9.vercel.app/home",
   },
 ];
 
@@ -104,6 +125,8 @@ export default function Projects() {
                 <p className="text-gray-400 text-sm mb-4">
                   {project.description}
                 </p>
+
+                <p className="text-gray-400 text-sm mb-4">{project.account}</p>
 
                 <div className="flex gap-3 text-orange-400 text-xl mb-5">
                   {project.tech.map((icon, idx) => (
