@@ -9,18 +9,21 @@ import {
 } from "react-icons/fa";
 import {
   SiExpress,
+  SiNextdotjs,
   SiMysql,
   SiReact,
   SiTailwindcss,
   SiHtml5,
   SiCss3,
   SiJavascript,
+  SiOpenai,
 } from "react-icons/si";
 
 import Project1 from "../assets/projects/project1.png";
 import Project2 from "../assets/projects/project3.png";
 import Project3 from "../assets/projects/project2.png";
 import Project4 from "../assets/projects/project4.png";
+import Project5 from "../assets/projects/project5.png";
 
 const projects = [
   {
@@ -37,7 +40,7 @@ const projects = [
       <FaAndroid />,
     ],
     github: "https://github.com/khaerulroh25/mdm_dashboard",
-    demo: "https://rengasdengklok086.my.id/index.htm",
+    demo: "https://rengasdengklok086.my.id/index.html",
   },
   {
     title: "Booking Service App",
@@ -73,6 +76,15 @@ const projects = [
     ],
     github: "#",
     demo: "https://chill-movie-part4-jhq9.vercel.app/home",
+  },
+  {
+    title: "HireMate Ai",
+    image: Project5,
+    description:
+      "HireMate AI is an AI-powered interview coaching web application designed to help job seekers practice and improve their interview skills in a realistic and personalized way. The platform allows users to select a job role or paste a job description, and the AI dynamically generates tailored interview questions based on that context.",
+    tech: [<SiTailwindcss />, <SiNextdotjs />, <SiOpenai />],
+    github: "https://github.com/khaerulroh25/HireMate-Ai",
+    demo: "https://hire-mate-ai-tau.vercel.app/",
   },
 ];
 

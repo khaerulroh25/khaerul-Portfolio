@@ -22,6 +22,7 @@ import {
   SiTailwindcss,
   SiBootstrap,
   SiMysql,
+  SiDotnet,
   SiNextdotjs,
   SiExpress,
   SiPostman,
@@ -88,6 +89,7 @@ export default function Skills() {
               { name: "Express.js", icon: <SiExpress /> },
               { name: "Laravel", icon: <FaLaravel /> },
               { name: "PHP", icon: <FaPhp /> },
+              { name: "ASP.NET(C#)", icon: <SiDotnet /> },
             ]}
           />
 
